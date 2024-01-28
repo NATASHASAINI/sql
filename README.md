@@ -51,7 +51,7 @@ Based on the investigation conducted on the organization's login attempts data, 
 
 The screenshot provided contains two parts: the query and a segment of the output. The query aims to retrieve all login attempts that transpired in countries other than Mexico.
 
-The process begins by selecting all data from the log_in_attempts table. Subsequently, a WHERE clause with the NOT operator is utilized to filter the results and exclude login attempts originating from Mexico. To achieve this, the LIKE operator is used, with the pattern 'MX%' employed to match the country codes representing Mexico in the dataset, namely 'MX' and 'MEXICO'. The percentage sign (%) is utilized in conjunction with LIKE to represent any number of unspecified characters.
+The process begins by selecting all data from the log_in_attempts table. Subsequently, a WHERE clause with the NOT operator is utilized to filter the results and exclude login attempts originating from Mexico. To achieve this, the LIKE operator is used, with the pattern '!= MX' employed to match the country codes representing Mexico in the dataset, namely 'MX' and 'MEXICO'.
 
 As a result, the query returns login attempts that occurred in countries other than Mexico based on the applied filtering criteria.
 <br />
